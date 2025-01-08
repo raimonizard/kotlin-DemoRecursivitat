@@ -60,4 +60,16 @@ class RecursivitatKtTest {
         // Comprovem que el factorial de n comprovat iterativament és igual al calculat recursivament
         assertEquals(valorEsperat, factorialRecursiu(n))
     }
+
+    /**
+     * Comprovem el valor que retorna la funció factorialRecursiu()
+     */
+    @Test
+    fun factorialRecursiuIfCalcul() {
+        // Assumim que el resultat que ens dona la funció iterativa és correcte.
+        var valorEsperat: Int = factorialRecursiu(n)
+
+        // Comprovem que el factorial de n comprovat iterativament és igual al calculat recursivament
+        assertEquals(valorEsperat, factorialRecursiuIf(n))
+    }
 }
